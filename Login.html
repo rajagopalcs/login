@@ -1,0 +1,41 @@
+<html>
+<head>
+   <title> Login Screen Validation Test case </title>
+</head>
+
+<body>
+
+<form action="#" onsubmit="return validation(loginform)" method="post" >
+
+<label>Enter Username:
+<input type="text" name="email "/></label><br/>
+
+<label>Enter Password:
+<input type="password" name="password"/></label><br/>
+
+<input type="submit" value="login"/>
+</form>
+
+
+<script type="text/javascript">
+
+
+function loginform(log_form)
+{
+var email = log_form.email.value;
+var password = log_form.password.value;
+
+if (email == "rajagopalcs@gmail.com" && password == "Password@123")
+   {
+alert ("Login is successful");
+return true;
+   }
+else
+  {
+alert ("Incorrect Email or Password");
+return false;
+  }
+}
+ </script>
+  </body>
+  </html>
